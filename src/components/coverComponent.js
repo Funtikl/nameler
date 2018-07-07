@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 
-const coverComponent = () =>{
+const coverComponent = (props) =>{
 	return(
-		<h1>Hello World</h1>
+		<div>
+		<form onSubmit={props.onSubmitHandler}>
+		<input type='text' onChange={props.onChangeHandler} />
+		</form>
+		</div>
 		)
 }
 

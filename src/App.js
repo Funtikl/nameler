@@ -7,11 +7,22 @@ import Portfolio from './components/portfolioComponent';
 import Footer from './components/footerComponent';
 
 class App extends Component {
+    constructor(){
+      super();
+
+    }
+    onChangeHandler = (val) =>{
+      // console.log(val.target.value)
+    }
+
+    onSubmitHandler = (val) =>{
+      console.log(val.target.value)
+    }
   render() {
     return (
       <div className="App">
       <Header />
-      <Cover />
+      <Cover onSubmitHandler={this.onSubmitHandler} onChangeHandler={this.onChangeHandler} />
       <Sosial />
       <Portfolio />
       <Footer />
