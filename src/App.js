@@ -5,6 +5,7 @@ import Cover from './components/coverComponent';
 import Sosial from './components/sosialComponent';
 import Portfolio from './components/portfolioComponent';
 import Footer from './components/footerComponent';
+import Burger from './components/burgerMenu';
 
 class App extends Component {
     constructor(){
@@ -12,16 +13,18 @@ class App extends Component {
 
     }
     onChangeHandler = (val) =>{
-      // console.log(val.target.value)
+ return val.target.value
     }
 
     onSubmitHandler = (val) =>{
+      val.preventDefault();
       console.log(val.target.value)
     }
   render() {
     return (
       <div className="App">
       <Header />
+      <Burger />
       <Cover onSubmitHandler={this.onSubmitHandler} onChangeHandler={this.onChangeHandler} />
       <Sosial />
       <Portfolio />

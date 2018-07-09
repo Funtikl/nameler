@@ -4,7 +4,7 @@ export default {
 		width : 'auto'
 	},
 	name:{
-		fontFamily : 'sans',
+		fontFamily: 'Montserrat,sans-serif',
 		fontSize :'60px',
 		marginTop: '0',
 		paddingTop: '70px'
@@ -15,7 +15,8 @@ export default {
 		listStyleType:'none',
 		flex :'wrap',
 		marginLeft:'1000px',
-		position : 'absolute'
+		position : 'absolute',
+		fontFamily: 'Montserrat,sans-serif',
 	},
 	line:{
 		display:'inline',
